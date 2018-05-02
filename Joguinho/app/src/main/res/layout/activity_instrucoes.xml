@@ -2,34 +2,33 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout"
+    android:id="@+id/layoutInstrucoes"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuInicialActivity">
+    tools:context=".InstrucoesActivity">
 
     <Button
-        android:id="@+id/btnInstrucoes"
+        android:id="@+id/btnPlay2"
         android:layout_width="349dp"
         android:layout_height="43dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="280dp"
-        android:text="@string/btnInstru"
+        android:layout_marginTop="440dp"
+        android:text="@string/play"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnPlay"
-        android:layout_width="349dp"
-        android:layout_height="43dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="204dp"
-        android:text="@string/play"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="352dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="208dp"
+        android:text="@string/instrucoes"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

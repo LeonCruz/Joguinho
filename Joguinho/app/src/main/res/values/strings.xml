@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Joguinho</string>
     <string name="play">Play</string>
+    <string name="btnInstru">Instruções</string>
+    <string name="instrucoes">
+        Não deixe a bola cair!\n
+        Toque na tela para bola pular.\n
+        Mas a cada toque, ela fica mais pesada.\n
+        Preparesse!
+    </string>
 </resources>

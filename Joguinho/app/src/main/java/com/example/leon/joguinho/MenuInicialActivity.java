@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MenuInicialActivity extends AppCompatActivity {
 
     Button btnPlay;
+    Button btnInstrucoes;
     ConstraintLayout layout;
 
     @Override
@@ -17,16 +18,26 @@ public class MenuInicialActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_inicial);
 
-        btnPlay = findViewById(R.id.btnPlay);
         layout = findViewById(R.id.layout);
+        btnPlay = findViewById(R.id.btnPlay);
+        btnInstrucoes = findViewById(R.id.btnInstrucoes);
 
-        btnPlay.setBackgroundColor(getResources().getColor(R.color.btnPlayColor));
         layout.setBackgroundColor(getResources().getColor(R.color.background));
+        btnPlay.setBackgroundColor(getResources().getColor(R.color.btnColor));
+        btnInstrucoes.setBackgroundColor(getResources().getColor(R.color.btnColor));
 
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getBaseContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnInstrucoes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), InstrucoesActivity.class);
                 startActivity(intent);
             }
         });
