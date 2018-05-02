@@ -36,9 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     public boolean onTouch(View v, MotionEvent event) {
         int distanciaPulo = 0;
         joguinho.pular(distanciaPulo);
+        joguinho.pontos++;
 
         joguinho.velocidadeQueda += .5;
-        distanciaPulo += 10;
+        distanciaPulo += 15;
 
         return false;
     }

@@ -14,6 +14,7 @@ public class Joguinho extends SurfaceView implements Runnable {
     boolean fimJogo = false;
     int posX, posY;
     double velocidadeQueda = 3;
+    int pontos = 0;
 
     Thread thread = null;
     SurfaceHolder holder;
@@ -51,6 +52,10 @@ public class Joguinho extends SurfaceView implements Runnable {
 
             Canvas canvas = holder.lockCanvas();
             canvas.drawColor(Color.WHITE);
+
+            paint.setColor(Color.BLACK);
+            paint.setTextSize(60);
+            canvas.drawText(String.valueOf(pontos), posX, 75, paint);
 
             cair(velocidadeQueda);
             personagem = new Personagem(canvas, paint, posX, posY);
