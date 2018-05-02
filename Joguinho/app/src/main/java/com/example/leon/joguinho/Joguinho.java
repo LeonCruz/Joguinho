@@ -36,8 +36,7 @@ public class Joguinho extends SurfaceView implements Runnable {
         posY += velocidade;
     }
 
-    public void resume()
-    {
+    public void resume() {
         rodando = true;
         thread = new Thread(this);
         thread.start();
@@ -51,7 +50,7 @@ public class Joguinho extends SurfaceView implements Runnable {
             }
 
             Canvas canvas = holder.lockCanvas();
-            canvas.drawColor(Color.WHITE);
+            canvas.drawColor(getResources().getColor(R.color.background));
 
             paint.setColor(Color.BLACK);
             paint.setTextSize(60);
